@@ -1,0 +1,28 @@
+{
+  "main": "index",
+  "type": "commonjs",
+  "jsnext:main": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./methods/*": {
+      "import": "./methods/*.mjs",
+      "require": "./methods/*.js",
+      "types": "./methods/*.d.ts"
+    },
+    "./__methods/*": {
+      "require": "./__methods/*.js",
+      "import": "./__methods/*.js"
+    },
+    "./explode.macro": "./explode.macro.js",
+    "./package.json": "./package.json"
+  },
+  "typings": "index.d.ts",
+  "scripts": {},
+  "husky": {},
+  "lint-staged": {},
+  "devDependencies": {}
+}
